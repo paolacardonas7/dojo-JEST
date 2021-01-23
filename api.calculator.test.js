@@ -32,7 +32,7 @@ describe("Testing /add path", () => {
 
     test("it should return a correct answer", done => {
         request(app)
-            .get("/add?a=1&b=1")
+            .get("/add?a=4&b=1")
             .then(response => {
                 expect(response.body.result).toBe(5);
                 done();
